@@ -12,7 +12,9 @@
     />
   </head>
   <body class="m-1">
-    <div class="text-center my-4"><h2>Contact Details</h2></div>
+    <div class="text-center my-5">
+      <h2><i>Contact Details</i></h2>
+    </div>
     <div class="d-flex flex-wrap justify-content-evenly" id="res"></div>
   </body>
   <script>
@@ -22,13 +24,13 @@
     function disData(data) {
       for (i of data) {
         res.innerHTML += `
-        <div class="card m-1 text-center shadow" style="width: 18rem" >
+        <div class="card mb-3 text-center shadow" style="width: 18rem" >
         <div class="p-3 bg-dark text-white rounded-top">
-           <h5 class="card-title">${i.name}</h5>
+           <h5 class="card-title"><i>${i.name}</i></h5>
          </div>
          <ul class="list-group list-group-flush">
-           <li class="list-group-item">${i.email}</li>
            <li class="list-group-item">${i.phone}</li>
+           <li class="list-group-item">${i.email}</li>
            <li class="list-group-item">${i.website}</li>
          </ul>
          <p class="card-text p-3">
